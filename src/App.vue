@@ -8,6 +8,7 @@
   </header>
   <div class="main">
       <ToDoList />
+      <ParentComponent />
   </div>
 
 </template>
@@ -16,16 +17,16 @@
 import Navigation from '@/components/Nav.vue';
 import Message from '@/components/Message.vue';
 import ToDoList from '@/components/ToDoList.vue';
+import ParentComponent from '@/components/Parent.vue';
 export default {
   components: {
     Navigation,
     Message,
-    ToDoList
+    ToDoList,
+    ParentComponent
   },
 };
 </script>
-
-
 
 <style scoped>
 header {
