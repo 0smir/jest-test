@@ -1,5 +1,6 @@
 <template>
   <header>
+   <Navigation />
     <div class="wrapper">
       <Message msg="You did it!" />
     </div>
@@ -12,10 +13,12 @@
 </template>
 
 <script>
+import Navigation from '@/components/Nav.vue';
 import Message from '@/components/Message.vue';
 import ToDoList from '@/components/ToDoList.vue';
 export default {
   components: {
+    Navigation,
     Message,
     ToDoList
   },
@@ -26,6 +29,7 @@ export default {
 
 <style scoped>
 header {
+  flex-wrap: wrap;
   line-height: 1.5;
 }
 
