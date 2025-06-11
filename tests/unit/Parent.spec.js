@@ -10,6 +10,8 @@ describe("ParentComponent.vue", () => {
   });
 
   it("Child should exist", () => {
+
+    //if you use mount that means that you can fall down till the target element and check it exists
     const wrapper = mount(ParentComponent);
     const childComp = wrapper.get('[data-test="test-child"]');
     expect(childComp.exists()).toBeTruthy();
